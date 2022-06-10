@@ -7,8 +7,13 @@
 
 /* Content & Podcast */
 .content {
-  width: 720px;
+  max-width: 720px;
   margin: 150px auto 0;
+}
+@media screen and (max-width: 800px) {
+  .content {
+    margin-top: 24px;
+  }
 }
 
 .podcast {
@@ -16,12 +21,29 @@
   margin-bottom: 52px;
   column-gap: 7px;
 }
+@media screen and (max-width: 720px) {
+  .podcast {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .podcast__info {
+    padding: 0 24px;
+  }
+}
+
 .podcast__title {
   font-weight: 700;
   font-size: 52px;
   line-height: 1;
   letter-spacing: -0.015em;
   margin: 45px 0 21px;
+}
+@media screen and (max-width: 380px) {
+  .podcast__title {
+    font-size: 45px;
+  }
 }
 .podcast__description {
   font-size: 16px;
@@ -34,6 +56,15 @@
 .subscribe {
   display: flex;
   column-gap: 5px;
+}
+@media screen and (max-width: 490px) {
+  .subscribe {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .subscribe__link {
   box-sizing: border-box;
@@ -48,6 +79,11 @@
   opacity: 0.7;
   transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
+@media screen and (max-width: 490px) {
+  .subscribe__link {
+    width: 100%;
+  }
+}
 .subscribe__link:hover {
   opacity: 1;
   border-color: #000;
@@ -61,6 +97,11 @@
   letter-spacing: -0.015em;
   color: #606060;
   text-decoration: none;
+}
+@media screen and (max-width: 490px) {
+  .subscribe__link_more {
+    width: 100%;
+  }
 }
 .subscribe__button_apple {
   width: 121px;
@@ -83,7 +124,7 @@
 
 /* Footer */
 .footer {
-  width: 720px;
+  max-width: 720px;
   margin: 0 auto 34px;
   display: flex;
   justify-content: space-between;
@@ -91,6 +132,12 @@
   line-height: 24px;
   letter-spacing: -0.015em;
   color: #999;
+}
+@media screen and (max-width: 720px) {
+  .footer {
+    padding: 0 24px;
+    flex-direction: column;
+  }
 }
 
 .menu__header {
