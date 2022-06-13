@@ -33,6 +33,15 @@
   }
 }
 
+.podcast__logo {
+  max-width: 271px;
+  max-width: 271px;
+}
+@media screen and (max-width: 720px) {
+  .podcast__logo {
+    max-width: 100%;
+  }
+}
 .podcast__title {
   font-weight: 700;
   font-size: 52px;
