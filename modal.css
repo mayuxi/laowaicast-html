@@ -1,0 +1,115 @@
+/* Modal Styles */
+.modal {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15,15,10,.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+.modal_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__container {
+  background-color: #f7f7f5;
+  border: 1px solid #dbdbd9;
+  border-radius: 2px;
+  color: #000;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  max-width: 560px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.modal__header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f7f7f5;
+  border-bottom: 1px solid rgba(15,15,15,0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 36px 37px;
+}
+.modal__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+@media screen and (max-width: 560px) {
+  .modal__title {
+    font-size: 18px;
+  }
+}
+.modal__close {
+  letter-spacing: .5px;
+  text-decoration: underline;
+  font-size: 12px;
+  color: rgb(15, 15, 15);
+}
+.modal__close:hover {
+  opacity: .6;
+}
+
+.modal__body {
+  padding: 34px 36px 37px;
+}
+.streaming-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  column-gap: 2%;
+}
+@media screen and (max-width: 560px) {
+  .streaming-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+.streaming-list__item {
+  width: 49%;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 560px) {
+  .streaming-list__item {
+    width: auto;
+  }
+}
+.streaming-list__link {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  transition: all .3s ease;
+}
+.streaming-list__link:hover {
+  opacity: .6;
+}
+.streaming-list__icon {
+  display: block;
+  margin-right: 16px;
+  width: 36px;
+}
