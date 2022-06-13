@@ -8,22 +8,18 @@
 /* Content & Podcast */
 .content {
   max-width: 720px;
-  margin: 150px auto 0;
-}
-@media screen and (max-width: 800px) {
-  .content {
-    margin-top: 24px;
-  }
+  margin: 0 auto;
 }
 
 .podcast {
   display: flex;
-  margin-bottom: 52px;
+  margin: 150px 0 52px;
   column-gap: 7px;
 }
 @media screen and (max-width: 720px) {
   .podcast {
     flex-direction: column;
+    margin-top: 24px;
   }
 }
 
