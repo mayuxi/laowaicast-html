@@ -64,6 +64,8 @@
   text-decoration: underline;
   font-size: 12px;
   color: rgb(15, 15, 15);
+  background: none;
+  border: none;
 }
 .modal__close:hover {
   opacity: .6;

@@ -130,6 +130,7 @@
   letter-spacing: -0.015em;
   color: #606060;
   text-decoration: none;
+  background: transparent;
 }
 @media screen and (max-width: 490px) {
   .subscribe__link_more {
