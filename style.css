@@ -156,6 +156,34 @@
   margin-bottom: 54px;
 }
 
+/* Articles */
+.article {
+  margin-bottom: 74px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.article__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000;
+}
+.article__link {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s ease-in-out;
+}
+.article__link:hover {
+  color: #999;
+  border: none;
+}
+
 /* Footer */
 .footer {
   max-width: 720px;
@@ -188,7 +216,7 @@
 .menu__link {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease;
 }
 .menu__link:hover {
   color: #999;
